@@ -1,0 +1,43 @@
+:root {
+  font-family: "Segoe UI", Meiryo, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #2d6cdf, #0f2a66);
+  color: #e8eefc;
+}
+
+.card {
+  width: min(92vw, 560px);
+  padding: 2rem;
+  border-radius: 18px;
+  background: rgba(12, 24, 58, 0.8);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.tag {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8cc3ff;
+}
+
+h1 {
+  margin: 0.7rem 0;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
