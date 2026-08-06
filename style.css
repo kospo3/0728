@@ -1,43 +1,146 @@
 :root {
+  color-scheme: light dark;
   font-family: "Segoe UI", Meiryo, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  place-items: center;
-  background: radial-gradient(circle at top, #2d6cdf, #0f2a66);
-  color: #e8eefc;
+  place-items: start center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: #f8fafc;
 }
 
 .card {
-  width: min(92vw, 560px);
+  width: min(96vw, 980px);
   padding: 2rem;
-  border-radius: 18px;
-  background: rgba(12, 24, 58, 0.8);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  text-align: left;
 }
 
-.tag {
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
+.eyebrow {
+  margin: 0 0 0.5rem;
   text-transform: uppercase;
-  color: #8cc3ff;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: #93c5fd;
 }
 
 h1 {
-  margin: 0.7rem 0;
-  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+
+.lead {
+  margin: 0.2rem 0 1rem;
 }
 
 p {
-  margin: 0;
   line-height: 1.7;
+  color: #e2e8f0;
+}
+
+.rank-summary {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(147, 197, 253, 0.25);
+}
+
+.rank-link {
+  display: block;
+  padding: 1rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rank-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.rank-link + .rank-link {
+  margin-top: 0.8rem;
+}
+
+.rank-link-s {
+  background: rgba(250, 204, 21, 0.24);
+}
+
+.rank-link-a {
+  background: rgba(37, 99, 235, 0.28);
+}
+
+.rank-link-b {
+  background: rgba(14, 165, 233, 0.24);
+}
+
+.rank-link-c {
+  background: rgba(34, 197, 94, 0.24);
+}
+
+.rank-link-d {
+  background: rgba(249, 115, 22, 0.24);
+}
+
+.rank-link-e {
+  background: rgba(239, 68, 68, 0.24);
+}
+
+.rank-link__label {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rank-link__text {
+  display: block;
+  margin-top: 0.35rem;
+  color: #dbeafe;
+}
+
+.rank-summary h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #bae6fd;
+}
+
+.rank-summary p {
+  margin: 0.35rem 0 0.8rem;
+}
+
+.rank-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #bfdbfe;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.rank-table {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.75);
+  color: #e2e8f0;
+  font-family: "Meiryo UI", Meiryo, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }

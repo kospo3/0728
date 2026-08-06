@@ -1,16 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>0728 Site</title>
+    <title>大学ランキング完全確定版</title>
+    <meta name="description" content="大学ランキング完全確定版。A級大学とB級大学の専用ページへ移動できる大学ランク一覧サイトです。" />
+    <meta name="keywords" content="大学ランキング,A級大学,B級大学,大学一覧,大学ランク" />
+    <meta property="og:title" content="大学ランキング完全確定版" />
+    <meta property="og:description" content="大学ランキング完全確定版。A級大学・B級大学の個別ページへ移動できます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kospo3.github.io/0728/" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://kospo3.github.io/0728/" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="card">
-      <p class="tag">GitHub Pages</p>
-      <h1>0728 開発サイト</h1>
-      <p>このページは 0728 リポジトリの公開確認用サイトです。</p>
+      <p class="eyebrow">大学ランク表</p>
+      <h1>大学ランキング完全確定版</h1>
+      <p class="lead">このサイトでは大学ランキングをまとめています。S級大学からE級大学まで、それぞれ専用ページで確認できます。</p>
+
+      <section class="rank-summary" aria-label="カテゴリリンク">
+        <a class="rank-link rank-link-s" href="s.html">
+          <span class="rank-link__label">S級大学</span>
+          <span class="rank-link__text">S級大学の一覧ページへ</span>
+        </a>
+        <a class="rank-link rank-link-a" href="a.html">
+          <span class="rank-link__label">A級大学</span>
+          <span class="rank-link__text">A級大学の一覧ページへ</span>
+        </a>
+        <a class="rank-link rank-link-b" href="b.html">
+          <span class="rank-link__label">B級大学</span>
+          <span class="rank-link__text">B級大学の一覧ページへ</span>
+        </a>
+        <a class="rank-link rank-link-c" href="c.html">
+          <span class="rank-link__label">C級大学</span>
+          <span class="rank-link__text">C級大学の一覧ページへ</span>
+        </a>
+        <a class="rank-link rank-link-d" href="d.html">
+          <span class="rank-link__label">D級大学</span>
+          <span class="rank-link__text">D級大学の一覧ページへ</span>
+        </a>
+        <a class="rank-link rank-link-e" href="e.html">
+          <span class="rank-link__label">E級大学</span>
+          <span class="rank-link__text">E級大学の一覧ページへ</span>
+        </a>
+      </section>
+
+      <section class="rank-summary" aria-label="注目ランク">
+        <h2>S級大学</h2>
+        <p>東京大・京都大</p>
+        <h2>A級大学</h2>
+        <p>大阪大・神戸大・名古屋大・一橋大・北海道大・東北大・九州大・慶應義塾大</p>
+        <h2>B級大学</h2>
+        <p>筑波大・東京外国語大・早稲田大・国際教養大・広島大・千葉大・横浜国立大・お茶女大・東京農工大・東京科学大学・東京都立大・大阪公立大・岡山大・ICU・上智大</p>
+        <h2>C級大学</h2>
+        <p>金沢大・東京学芸大・名古屋工業大・熊本大・奈良女子大・東京理科大・電気通信大・京都工芸繊維大・横浜市立大・名古屋市立大・九州工業大・東京海洋大・新潟大・長崎大・山梨大・岐阜大・京都府立大・兵庫県立大・小樽商科大・神戸市外国語大・中央(法)</p>
+        <h2>D級大学</h2>
+        <p>群馬大・静岡大・埼玉大・滋賀大・三重大・信州大・徳島大・京都教育大・静岡県立大・愛知県立大・都留文科大・同志社大・立教大・明治大・山形大・岩手大・茨城大・富山大・鳥取大・愛媛大・香川大・山口大・佐賀大・鹿児島大・和歌山大・福井大・弘前大・高知大・宇都宮大・大阪教育大・高崎経済大・滋賀県立大</p>
+        <h2>E級大学</h2>
+        <p>秋田大・福島大・島根大・大分大・宮崎大・前橋工科大・北九州市立大・県立広島大・鳴門教育大・青山学院大・中央大(法以外)・法政大・津田塾大・琉球大・室蘭工業大・北見工業大・高知工科大・宮城大・会津大・奈良県立大・下関市立大・青森公立大・富山県立大・福井県立大などの県立大・学習院大・関西学院大・関西大・立命館大・芝浦工業大・豊田工業大・日大・成蹊大・成城大・東京女子大・西南学院大・京都女子大・東京都市大</p>
+      </section>
+
+      <pre class="rank-table">〔ＳＳ〕東京大
+〔Ｓ〕京都大
+---------------------------
+〔Ａ〕大阪大・神戸大
+〔Ａ〕名古屋大・一橋大
+〔Ａ〕北海道大・東北大・九州大・慶應義塾大
+------------------------------------------
+〔Ｂ〕筑波大・東京外国語大・早稲田大・国際教養大
+〔Ｂ〕広島大・千葉大・横浜国立大・お茶女大
+〔Ｂ〕東京農工大・東京科学大学・東京都立大
+〔Ｂ〕大阪公立大・岡山大・ICU・上智大
+------------------------------------------
+〔Ｃ〕金沢大・東京学芸大・名古屋工業大・熊本大・奈良女子大・東京理科大
+〔Ｃ〕電気通信大・京都工芸繊維大・横浜市立大・
+〔Ｃ〕名古屋市立大・九州工業大・東京海洋大
+〔Ｃ〕新潟大・長崎大・山梨大・岐阜大・京都府立大・兵庫県立大・
+〔Ｃ〕小樽商科大・神戸市外国語大・中央(法)
+----------------------------------------------------------------
+〔Ｄ〕群馬大・静岡大・埼玉大・滋賀大・三重大・信州大・徳島大
+〔Ｄ〕京都教育大・静岡県立大・愛知県立大・
+〔Ｄ〕都留文科大・同志社大・立教大・明治大
+〔Ｄ〕山形大・岩手大・茨城大・富山大・鳥取大・愛媛大・香川大・
+〔Ｄ〕山口大・佐賀大・鹿児島大・和歌山大・福井大・弘前大・高知大
+〔Ｄ〕宇都宮大・大阪教育大・高崎経済大・滋賀県立大
+----------------------------------------------------------------------------
+〔Ｅ〕秋田大・福島大・島根大・大分大・宮崎大・前橋工科大・
+〔Ｅ〕北九州市立大・県立広島大・鳴門教育大・青山学院大・中央大(法以外)・法政大・津田塾大
+〔Ｅ〕琉球大・室蘭工業大・北見工業大・高知工科大・宮城大・会津大・奈良県立大・
+〔Ｅ〕下関市立大・青森公立大・富山県立大・福井県立大などの県立大・学習院大・関西学院大
+〔Ｅ〕関西大・立命館大・芝浦工業大・豊田工業大
+〔Ｅ〕日大・成蹊大・成城大・東京女子大・西南学院大・京都女子大 ・東京都市大</pre>
     </main>
   </body>
 </html>
