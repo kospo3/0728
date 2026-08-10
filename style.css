@@ -144,3 +144,259 @@ p {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
+
+body.rank-page {
+  --page-bg-start: #111827;
+  --page-bg-end: #020617;
+  --page-accent: #f8fafc;
+  --page-accent-soft: rgba(248, 250, 252, 0.14);
+  --page-card-bg: rgba(9, 14, 28, 0.72);
+  --page-card-border: rgba(255, 255, 255, 0.16);
+  --page-summary-bg: rgba(255, 255, 255, 0.08);
+  --page-summary-border: rgba(255, 255, 255, 0.12);
+  --page-text: #e5eefb;
+  --page-muted: #bfd3ee;
+  --page-heading-font: "Yu Mincho", "Hiragino Mincho ProN", Georgia, serif;
+  padding: 3rem 1.25rem;
+  place-items: center;
+  background:
+    radial-gradient(circle at top left, var(--page-accent-soft), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.1), transparent 24%),
+    linear-gradient(135deg, var(--page-bg-start), var(--page-bg-end));
+  color: var(--page-text);
+}
+
+body.rank-page .card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(92vw, 820px);
+  padding: 2.5rem;
+  border: 1px solid var(--page-card-border);
+  background: var(--page-card-bg);
+  box-shadow: 0 30px 80px rgba(2, 6, 23, 0.42);
+}
+
+body.rank-page .card::before,
+body.rank-page .card::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body.rank-page .card::before {
+  top: -4.5rem;
+  right: -3rem;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--page-accent-soft), transparent 68%);
+}
+
+body.rank-page .card::after {
+  left: -2rem;
+  bottom: -2.5rem;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 2rem;
+  transform: rotate(18deg);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 70%);
+}
+
+body.rank-page .back-link {
+  margin-bottom: 1.5rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--page-card-border);
+  border-radius: 999px;
+  color: var(--page-muted);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+body.rank-page .back-link:hover {
+  text-decoration: none;
+  color: var(--page-text);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body.rank-page .eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--page-accent);
+  letter-spacing: 0.28em;
+}
+
+body.rank-page h1 {
+  font-family: var(--page-heading-font);
+  font-size: clamp(2.1rem, 5vw, 3.7rem);
+  line-height: 1.08;
+  margin-bottom: 1rem;
+}
+
+body.rank-page .lead {
+  max-width: 38rem;
+  font-size: 1.05rem;
+  color: var(--page-muted);
+  margin-bottom: 1.6rem;
+}
+
+body.rank-page p {
+  color: var(--page-text);
+}
+
+body.rank-page .rank-summary {
+  padding: 1.4rem 1.35rem;
+  border: 1px solid var(--page-summary-border);
+  background: var(--page-summary-bg);
+  backdrop-filter: blur(10px);
+}
+
+body.rank-page .rank-summary h2 {
+  margin-bottom: 0.2rem;
+  color: var(--page-accent);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+body.rank-page .rank-summary p {
+  color: var(--page-text);
+}
+
+body.rank-page-a {
+  --page-bg-start: #1f2937;
+  --page-bg-end: #0f172a;
+  --page-accent: #f8d57e;
+  --page-accent-soft: rgba(248, 213, 126, 0.24);
+  --page-card-bg: linear-gradient(160deg, rgba(31, 41, 55, 0.9), rgba(15, 23, 42, 0.76));
+  --page-card-border: rgba(248, 213, 126, 0.28);
+  --page-summary-bg: linear-gradient(145deg, rgba(87, 64, 18, 0.3), rgba(255, 255, 255, 0.04));
+  --page-summary-border: rgba(248, 213, 126, 0.22);
+  --page-text: #fff8e6;
+  --page-muted: #f5dfaa;
+}
+
+body.rank-page-a .card {
+  border-radius: 2rem 5.5rem 2rem 2rem;
+}
+
+body.rank-page-b {
+  --page-bg-start: #02131f;
+  --page-bg-end: #0f3b57;
+  --page-accent: #67e8f9;
+  --page-accent-soft: rgba(103, 232, 249, 0.28);
+  --page-card-bg: rgba(4, 24, 38, 0.64);
+  --page-card-border: rgba(103, 232, 249, 0.28);
+  --page-summary-bg: linear-gradient(135deg, rgba(8, 51, 74, 0.72), rgba(6, 182, 212, 0.12));
+  --page-summary-border: rgba(125, 211, 252, 0.18);
+  --page-text: #e0fbff;
+  --page-muted: #b7f6ff;
+  --page-heading-font: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+body.rank-page-b .card {
+  border-radius: 1.6rem;
+  box-shadow: 0 0 0 1px rgba(103, 232, 249, 0.08), 0 32px 90px rgba(0, 0, 0, 0.4);
+}
+
+body.rank-page-b .card::after {
+  left: auto;
+  right: 2rem;
+  bottom: 1.2rem;
+  width: 12rem;
+  height: 0.18rem;
+  border-radius: 999px;
+  transform: none;
+  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.9), transparent);
+}
+
+body.rank-page-c {
+  --page-bg-start: #0f2d1f;
+  --page-bg-end: #092316;
+  --page-accent: #86efac;
+  --page-accent-soft: rgba(134, 239, 172, 0.24);
+  --page-card-bg: linear-gradient(180deg, rgba(8, 26, 18, 0.88), rgba(15, 45, 31, 0.72));
+  --page-card-border: rgba(134, 239, 172, 0.22);
+  --page-summary-bg: rgba(13, 44, 29, 0.72);
+  --page-summary-border: rgba(163, 230, 53, 0.18);
+  --page-text: #ecfdf3;
+  --page-muted: #c8f7d6;
+}
+
+body.rank-page-c .card {
+  border-radius: 3.5rem 1.4rem 3.5rem 1.4rem;
+}
+
+body.rank-page-c .rank-summary {
+  box-shadow: inset 0 0 0 1px rgba(134, 239, 172, 0.08);
+}
+
+body.rank-page-d {
+  --page-bg-start: #3b1d12;
+  --page-bg-end: #140c09;
+  --page-accent: #fb923c;
+  --page-accent-soft: rgba(251, 146, 60, 0.24);
+  --page-card-bg: linear-gradient(135deg, rgba(39, 19, 10, 0.92), rgba(20, 12, 9, 0.8));
+  --page-card-border: rgba(251, 146, 60, 0.24);
+  --page-summary-bg: rgba(67, 31, 14, 0.74);
+  --page-summary-border: rgba(253, 186, 116, 0.18);
+  --page-text: #fff1e8;
+  --page-muted: #ffd1b0;
+}
+
+body.rank-page-d .card {
+  border-radius: 0 3rem 0 3rem;
+}
+
+body.rank-page-d .card::before {
+  top: auto;
+  bottom: -5rem;
+  right: -1rem;
+  width: 16rem;
+  height: 16rem;
+}
+
+body.rank-page-e {
+  --page-bg-start: #3b0d24;
+  --page-bg-end: #140811;
+  --page-accent: #f9a8d4;
+  --page-accent-soft: rgba(249, 168, 212, 0.28);
+  --page-card-bg: linear-gradient(160deg, rgba(47, 12, 31, 0.88), rgba(20, 8, 17, 0.78));
+  --page-card-border: rgba(249, 168, 212, 0.24);
+  --page-summary-bg: linear-gradient(145deg, rgba(67, 18, 46, 0.74), rgba(255, 255, 255, 0.05));
+  --page-summary-border: rgba(244, 114, 182, 0.2);
+  --page-text: #fff1f7;
+  --page-muted: #ffd3e7;
+}
+
+body.rank-page-e .card {
+  border-radius: 2.5rem;
+}
+
+body.rank-page-e .rank-summary {
+  border-style: dashed;
+}
+
+@media (max-width: 640px) {
+  body.rank-page {
+    padding: 1.25rem 0.9rem;
+  }
+
+  body.rank-page .card {
+    width: min(100vw, 820px);
+    padding: 1.5rem;
+  }
+
+  body.rank-page h1 {
+    font-size: 2rem;
+  }
+
+  body.rank-page .card::before {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  body.rank-page .card::after {
+    width: 8rem;
+    height: 8rem;
+  }
+}
