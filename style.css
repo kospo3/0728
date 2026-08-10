@@ -262,6 +262,36 @@ body.rank-page .rank-summary p {
   color: var(--page-text);
 }
 
+body.rank-page:not(.rank-page-a) .rank-summary {
+  position: relative;
+  padding-top: 3.2rem;
+}
+
+body.rank-page:not(.rank-page-a) .rank-summary::before {
+  content: "掲載大学リスト";
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--page-card-border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--page-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+body.rank-page:not(.rank-page-a) .rank-summary p {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 2.05;
+  letter-spacing: 0.04em;
+}
+
 body.rank-page-a {
   --page-bg-start: #1f2937;
   --page-bg-end: #0f172a;
@@ -298,6 +328,10 @@ body.rank-page-b .card {
   box-shadow: 0 0 0 1px rgba(103, 232, 249, 0.08), 0 32px 90px rgba(0, 0, 0, 0.4);
 }
 
+body.rank-page-b .rank-summary p {
+  text-shadow: 0 0 18px rgba(103, 232, 249, 0.12);
+}
+
 body.rank-page-b .card::after {
   left: auto;
   right: 2rem;
@@ -330,6 +364,11 @@ body.rank-page-c .rank-summary {
   box-shadow: inset 0 0 0 1px rgba(134, 239, 172, 0.08);
 }
 
+body.rank-page-c .rank-summary p {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
 body.rank-page-d {
   --page-bg-start: #3b1d12;
   --page-bg-end: #140c09;
@@ -355,6 +394,12 @@ body.rank-page-d .card::before {
   height: 16rem;
 }
 
+body.rank-page-d .rank-summary {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 28%),
+    rgba(67, 31, 14, 0.74);
+}
+
 body.rank-page-e {
   --page-bg-start: #3b0d24;
   --page-bg-end: #140811;
@@ -374,6 +419,10 @@ body.rank-page-e .card {
 
 body.rank-page-e .rank-summary {
   border-style: dashed;
+}
+
+body.rank-page-e .rank-summary p {
+  font-style: italic;
 }
 
 @media (max-width: 640px) {
@@ -398,5 +447,13 @@ body.rank-page-e .rank-summary {
   body.rank-page .card::after {
     width: 8rem;
     height: 8rem;
+  }
+
+  body.rank-page:not(.rank-page-a) .rank-summary {
+    padding-top: 3rem;
+  }
+
+  body.rank-page-c .rank-summary p {
+    column-count: 1;
   }
 }
