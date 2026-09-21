@@ -145,6 +145,66 @@ p {
   overflow-wrap: anywhere;
 }
 
+.rank-detail {
+  margin-top: 1.5rem;
+  padding: 1.4rem 1.35rem;
+  border-radius: 14px;
+  border: 1px solid var(--page-card-border, rgba(255, 255, 255, 0.16));
+  background: var(--page-summary-bg, rgba(255, 255, 255, 0.06));
+}
+
+.rank-detail h2 {
+  margin: 1.4rem 0 0.6rem;
+  font-size: 1.15rem;
+  color: var(--page-accent, #93c5fd);
+}
+
+.rank-detail h2:first-child {
+  margin-top: 0;
+}
+
+.rank-detail p,
+.rank-detail li {
+  color: var(--page-text, #e2e8f0);
+  line-height: 1.75;
+}
+
+.rank-detail ul {
+  margin: 0.4rem 0 0.8rem;
+  padding-left: 1.4rem;
+}
+
+.rank-detail-table {
+  width: 100%;
+  margin-top: 0.6rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.rank-detail-table th,
+.rank-detail-table td {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--page-card-border, rgba(255, 255, 255, 0.16));
+  text-align: left;
+  vertical-align: top;
+  color: var(--page-text, #e2e8f0);
+}
+
+.rank-detail-table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+}
+
+.rank-detail-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rank-detail-note {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--page-muted, #94a3b8);
+}
+
 body.rank-page {
   --page-bg-start: #111827;
   --page-bg-end: #020617;
