@@ -94,6 +94,14 @@ p {
   background: rgba(239, 68, 68, 0.24);
 }
 
+.rank-link-rank {
+  background: rgba(148, 163, 184, 0.24);
+}
+
+.rank-link-science {
+  background: rgba(45, 212, 191, 0.24);
+}
+
 .rank-link__label {
   display: block;
   font-size: 1.05rem;
